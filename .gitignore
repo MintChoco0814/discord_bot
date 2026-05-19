@@ -1,2 +1,5 @@
-node_modules
+node_modules/
 .env
+main_fd/token.txtmain_fd/token.txt
+.env
+node_modules/
