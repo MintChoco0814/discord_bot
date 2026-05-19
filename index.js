@@ -1,8 +1,8 @@
 require("dotenv").config();
 
 const { Client, GatewayIntentBits, PermissionsBitField } = require("discord.js");
-const readMenu = require('../module_fd/readMenu.js');
-const readTimeTable = require("../module_fd/readTimeTable.js");
+const readMenu = require('./module_fd/readMenu.js');
+const readTimeTable = require("./module_fd/readTimeTable.js");
 
 const client = new Client({
     intents: [

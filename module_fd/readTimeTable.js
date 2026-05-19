@@ -1,7 +1,14 @@
-const fs = require("fs").promises; 
+const fs = require("fs/promises");
+const path = require("path");
 
 async function readTimeTable() {
-    const data = await fs.readFile("../data_fd/timeTable.json", "utf-8");
+    const filePath = path.join(
+        __dirname,
+        "../data_fd/timeTable.json"
+    );
+
+    const data = await fs.readFile(filePath, "utf8");
+
     return JSON.parse(data);
 }
 
